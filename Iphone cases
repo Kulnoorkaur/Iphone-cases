@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Cases - Premium Phone Cases for Every Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #f5e6d3 0%, #f9f3ea 100%);
+            color: #5a4a3a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d4806f 0%, #c96850 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.95;
+        }
+
+        .canada-badge {
+            background: #fff;
+            color: #c96850;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .intro h2 {
+            color: #c96850;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            font-size: 2rem;
+            color: #d4806f;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            background: #f9f3ea;
+            padding: 1rem;
+        }
+
+        .gallery-item-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .gallery-item-info h3 {
+            color: #c96850;
+            margin-bottom: 0.5rem;
+        }
+
+        .upload-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .upload-section h3 {
+            color: #c96850;
+            margin-bottom: 1rem;
+        }
+
+        .upload-note {
+            background: #fff3cd;
+            border: 2px dashed #d4806f;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .features {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .features h2 {
+            text-align: center;
+            color: #c96850;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f9f3ea;
+            border-radius: 10px;
+        }
+
+        .feature h3 {
+            color: #d4806f;
+            margin-bottom: 0.5rem;
+        }
+
+        .compatibility {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .compatibility h2 {
+            text-align: center;
+            color: #c96850;
+            margin-bottom: 2rem;
+        }
+
+        .phone-models {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .phone-models div {
+            background: #f9f3ea;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .contact {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact h2 {
+            text-align: center;
+            color: #c96850;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .phone-number {
+            font-size: 1.5rem;
+            color: #d4806f;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #5a4a3a;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #d4806f;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #d4806f 0%, #c96850 100%);
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #5a4a3a;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍂 Iphone Cases 🍂</h1>
+        <p>Premium phone cases for every style</p>
+        <div class="canada-badge">🍁 Canada Only 🍁</div>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Beautiful Cases for Your Phone</h2>
+            <p>Protect your device with our stunning collection of autumn-themed cases</p>
+            <p>Available for both iPhone and Samsung Galaxy models</p>
+            <div class="price">$15.00 CAD per case</div>
+        </div>
+
+        <div class="features">
+            <h2>Why Choose Our Cases?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🎨 Beautiful Designs</h3>
+                    <p>Unique autumn patterns that stand out</p>
+                </div>
+                <div class="feature">
+                    <h3>🛡️ Premium Protection</h3>
+                    <p>Durable materials keep your phone safe</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 Perfect Fit</h3>
+                    <p>Precise cutouts for all buttons and cameras</p>
+                </div>
+                <div class="feature">
+                    <h3>💰 Affordable</h3>
+                    <p>Only $15.00 CAD with free shipping in Canada</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; color: #c96850; margin-bottom: 2rem; font-size: 2rem;">Our Collection</h2>
+        
+        <div class="upload-section">
+            <h3>📸 Add Your Product Photos Here</h3>
+            <div class="upload-note">
+                <p><strong>To add your photos:</strong></p>
+                <p>1. Upload your images to a free service like <strong>Imgur.com</strong> or <strong>PostImages.org</strong></p>
+                <p>2. Copy the direct image link</p>
+                <p>3. Replace the "IMAGE_URL_HERE" text below with your actual image links</p>
+                <p><em>Or I can help you do this - just let me know!</em></p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="IMAGE_URL_1_HERE" alt="Autumn Pumpkin Case - Cream Background">
+                <div class="gallery-item-info">
+                    <h3>Autumn Pumpkin Design - Cream</h3>
+                    <p>Beautiful fall-themed case with warm pumpkins and leaves on cream background</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_2_HERE" alt="Clear Case with Wrist Strap">
+                <div class="gallery-item-info">
+                    <h3>Autumn Case with Wrist Strap</h3>
+                    <p>Functional and stylish with convenient wrist strap</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_3_HERE" alt="Autumn Case Close-up">
+                <div class="gallery-item-info">
+                    <h3>Premium Autumn Design</h3>
+                    <p>High-quality print with perfect camera cutouts</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_4_HERE" alt="Autumn Case with Handle">
+                <div class="gallery-item-info">
+                    <h3>Stylish Autumn Case</h3>
+                    <p>Elegant design with autumn pumpkins and foliage</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_5_HERE" alt="iPhone and Samsung Cases">
+                <div class="gallery-item-info">
+                    <h3>Available for All Models</h3>
+                    <p>Compatible with both iPhone and Samsung Galaxy devices</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_6_HERE" alt="Halloween Spooky Case">
+                <div class="gallery-item-info">
+                    <h3>Spooky Halloween Design</h3>
+                    <p>Fun Halloween theme with pumpkins, leaves and treats</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_7_HERE" alt="Clear Halloween Case">
+                <div class="gallery-item-info">
+                    <h3>Clear Halloween Case</h3>
+                    <p>Transparent case with fall Halloween pattern</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_8_HERE" alt="Camera Compatibility Chart">
+                <div class="gallery-item-info">
+                    <h3>Perfect Fit Guaranteed</h3>
+                    <p>Precise camera cutouts for iPhone and Galaxy models</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_9_HERE" alt="Halloween Case in Hand">
+                <div class="gallery-item-info">
+                    <h3>Real Product Photo</h3>
+                    <p>See how beautiful these cases look in person!</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="IMAGE_URL_10_HERE" alt="Mirror Effect Case">
+                <div class="gallery-item-info">
+                    <h3>Premium Clear Design</h3>
+                    <p>Beautiful autumn pattern on clear case</p>
+                    <p style="color: #d4806f; font-weight: bold; margin-top: 0.5rem;">$15.00 CAD</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="compatibility">
+            <h2>Compatible Models</h2>
+            <h3 style="text-align: center; color: #d4806f; margin-bottom: 1rem;">iPhone Models</h3>
+            <div class="phone-models">
+                <div>iPhone 15 Pro Max</div>
+                <div>iPhone 15 Pro</div>
+                <div>iPhone 15 Plus</div>
+                <div>iPhone 15</div>
+                <div>iPhone 14 Pro Max</div>
+                <div>iPhone 14 Pro</div>
+                <div>iPhone 14 Plus</div>
+                <div>iPhone 14</div>
+                <div>iPhone 13 Pro Max</div>
+                <div>iPhone 13 Pro</div>
+                <div>iPhone 13 Mini</div>
+                <div>iPhone 13</div>
+                <div>iPhone 12 Pro Max</div>
+                <div>iPhone 12 Pro</div>
+                <div>iPhone 12 Mini</div>
+                <div>iPhone 12</div>
+                <div>iPhone 11 Pro Max</div>
+                <div>iPhone 11 Pro</div>
+                <div>iPhone 11</div>
+                <div>iPhone XS Max</div>
+                <div>iPhone XR</div>
+                <div>iPhone X/XS</div>
+                <div>iPhone 7/8 Plus</div>
+                <div>iPhone 7/8</div>
+                <div>iPhone 6/6s Plus</div>
+                <div>iPhone 6/6s</div>
+            </div>
+
+            <h3 style="text-align: center; color: #d4806f; margin: 2rem 0 1rem 0;">Samsung Galaxy Models</h3>
+            <div class="phone-models">
+                <div>Galaxy S25 Ultra</div>
+                <div>Galaxy S25 Plus</div>
+                <div>Galaxy S25</div>
+                <div>Galaxy S24 Ultra</div>
+                <div>Galaxy S24 Plus</div>
+                <div>Galaxy S24</div>
+                <div>Galaxy S23 Ultra</div>
+                <div>Galaxy S23 Plus</div>
+                <div>Galaxy S23</div>
+                <div>Galaxy S22 Ultra</div>
+                <div>Galaxy S22</div>
+                <div>Galaxy S21 5G</div>
+                <div>Galaxy A56 5G</div>
+                <div>Galaxy A55 5G</div>
+                <div>Galaxy A54 5G</div>
+                <div>Galaxy A53 5G</div>
+                <div>Galaxy A52/A52s 5G</div>
+                <div>Galaxy A35</div>
+                <div>Galaxy A34</div>
+                <div>Galaxy A26 5G</div>
+                <div>Galaxy A15 5G</div>
+                <div>Galaxy A14</div>
+                <div>Galaxy A13 4G</div>
+                <div>Galaxy A12</div>
+                <div>Galaxy A05s</div>
+                <div>Galaxy A05</div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Ready to order or have questions? Get in touch!</p>
+                <div class="phone-number">📞 +1 (368) 889-8775</div>
+                <p style="color: #d4806f; font-weight: bold;">Shipping available across Canada 🍁</p>
+            </div>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Phone Model *</label>
+                    <input type="text" id="model" name="model" placeholder="e.g., iPhone 14 Pro" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message / Case Design Preference</label>
+                    <textarea id="message" name="message" placeholder="Tell us which design you're interested in or if you'd like a custom design!"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Iphone Cases | Canada Only 🍁</p>
+        <p>Premium phone cases for every style</p>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const model = document.getElementById('model').value;
+            const message = document.getElementById('message').value;
+            
+            alert(`Thank you ${name}! We'll contact you soon at ${phone} to complete your order for the ${model} case.`);
+            
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
